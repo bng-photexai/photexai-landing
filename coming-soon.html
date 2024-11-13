@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="font-inter">
+  <head>
+    <title>PhotexAI | Coming Soon</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/vueble-favicon-inverse.png"
+    />
+    <style>
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .gradient-bg {
+        background: linear-gradient(
+          45deg,
+          #a83232,
+          #c85064,
+          #c85064,
+          #b13e89,
+          #7a3d99,
+          #b13e89,
+          #c85064,
+          #a83232
+        );
+        background-size: 300% 300%;
+        animation: gradient 15s ease infinite;
+      }
+    </style>
+  </head>
+
+  <body class="w-full h-screen gradient-bg">
+    <div
+      class="flex flex-col items-center justify-center w-full h-full text-white"
+    >
+      <h1 class="mb-4 text-5xl font-bold">PhotexAI</h1>
+      <h2 class="text-2xl">AI research company for game development</h2>
+    </div>
+  </body>
+</html>
