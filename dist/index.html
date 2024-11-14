@@ -19,36 +19,51 @@
       type="image/x-icon"
       href="/assets/vueble-favicon-inverse.png"
     />
-    <style>
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-      .gradient-bg {
-        background: linear-gradient(
-          45deg,
-          #a83232,
-          #c85064,
-          #c85064,
-          #b13e89,
-          #7a3d99,
-          #b13e89,
-          #c85064,
-          #a83232
-        );
-        background-size: 300% 300%;
-        animation: gradient 15s ease infinite;
-      }
-    </style>
   </head>
   <body class="bg-blue-500">
     <h1>Hello Triangle!</h1>
+    <script>
+    const body = document.body;
+    const colors = [
+      ["#ff7e5f", "#feb47b"], // Coral to Peach
+      ["#6a11cb", "#2575fc"], // Purple to Blue
+      ["#43cea2", "#185a9d"], // Teal to Navy
+      ["#ffafbd", "#ffc3a0"], // Pink to Light Orange
+      ["#1f4037", "#99f2c8"]  // Dark Green to Mint
+    ];
+    let step = 0;
+    const colorSpeed = 0.02; // Speed of transition between colors
+    let colorIndices = [0, 1];
+
+    // Function to interpolate between two colors
+    function interpolateColor(color1, color2, factor) {
+      const result = color1.slice(1).match(/.{2}/g).map((hex, i) => {
+        return Math.round(parseInt(hex, 16) * (1 - factor) + parseInt(color2.slice(1).match(/.{2}/g)[i], 16) * factor);
+      });
+      return `#${result.map(x => x.toString(16).padStart(2, '0')).join('')}`;
+    }
+
+    function updateGradient() {
+      // Calculate interpolated colors
+      const color1 = interpolateColor(colors[colorIndices[0]][0], colors[colorIndices[1]][0], step);
+      const color2 = interpolateColor(colors[colorIndices[0]][1], colors[colorIndices[1]][1], step);
+
+      // Set background style
+      body.style.background = `linear-gradient(45deg, ${color1}, ${color2})`;
+      body.style.backgroundSize = "200% 200%";
+      body.style.transition = "background 0.2s ease";
+
+      // Increment the step for the next color transition
+      step += colorSpeed;
+      if (step >= 1) {
+        step %= 1;
+        colorIndices[0] = colorIndices[1];
+        colorIndices[1] = (colorIndices[1] + 1) % colors.length;
+      }
+    }
+
+    // Update gradient every 50ms
+    setInterval(updateGradient, 50);
+  </script>
   </body>
 </html>
