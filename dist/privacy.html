@@ -1,0 +1,1040 @@
+<!doctype html>
+<html class="font-inter">
+  <head>
+    <!-- Title -->
+    <title>PhotexAI | Privacy</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <link rel="stylesheet" href="output.css" />
+    <!-- Dark Mode Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      media="(prefers-color-scheme: dark)"
+      href="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/5c6850ee-40ab-478f-32a4-20edd3362300/public"
+    />
+    <!-- Light Mode Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      media="(prefers-color-scheme: light)"
+      href="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/e39e8e1f-8a6a-40a6-fd37-25d12731f600/public"
+    />
+  </head>
+
+  <body class="w-full h-screen text-white bg-black">
+    <div class="flex flex-col w-full h-full">
+      <!-- Mobile Navigation Bar (Closed) -->
+      <nav
+        class="fixed z-10 flex flex-row items-center justify-between w-full h-16 p-4 bg-black navbar lg:hidden"
+      >
+        <!-- Wordmark Logo -->
+        <div>
+          <a href="https://photexai.com/">
+            <img
+              src="../assets/photexai_wordmark_white.png"
+              alt="Logo"
+              class="h-10"
+            />
+          </a>
+        </div>
+        <!-- Open Mobile Navigation Bar -->
+        <button class="open-mobile-navbar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="text-white size-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </nav>
+      <!-- Mobile Navigation Bar (Opened)-->
+      <nav
+        class="fixed z-20 flex-col items-start hidden w-full h-full p-4 bg-black mobile-navbar lg:hidden"
+      >
+        <div class="flex flex-row justify-between w-full">
+          <!-- Wordmark Logo -->
+          <div>
+            <a href="https://photexai.com/">
+              <img
+                src="../assets/photexai_wordmark_white.png"
+                alt="Logo"
+                class="h-10"
+              />
+            </a>
+          </div>
+          <!-- Exit Mobile Navigation Bar -->
+          <button class="close-mobile-navbar-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="text-white size-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Navigation Links -->
+        <ul class="flex flex-col items-start justify-center my-12 gap-y-8">
+          <!-- Articore -->
+          <a href="#"
+            ><li class="text-3xl font-medium text-white">Articore</li></a
+          >
+          <!-- About -->
+          <a href="#"><li class="text-3xl font-medium text-white">About</li></a>
+          <!-- Blog -->
+          <a href="#"><li class="text-3xl font-medium text-white">Blog</li></a>
+          <!-- Careers -->
+          <a href="#"
+            ><li class="text-3xl font-medium text-white">Careers</li></a
+          >
+        </ul>
+      </nav>
+      <!-- Desktop Navigation Bar -->
+      <nav
+        class="fixed z-20 flex-row items-center justify-center hidden w-full h-16 bg-black navbar lg:flex"
+      >
+        <div class="flex flex-row justify-between w-full mx-4 2xl:w-4/6">
+          <!-- Wordmark Logo -->
+          <div>
+            <a href="https://photexai.com/">
+              <img
+                src="../assets/photexai_wordmark_white.png"
+                alt="Logo"
+                class="h-10"
+              />
+            </a>
+          </div>
+          <ul class="flex flex-row items-center justify-center gap-x-8">
+            <a href="#"
+              ><li class="text-sm font-semibold text-white">Articore</li></a
+            >
+            <a href="#"
+              ><li class="text-sm font-semibold text-white">About</li></a
+            >
+            <a href="#"
+              ><li class="text-sm font-semibold text-white">Blog</li></a
+            >
+            <a href="#"
+              ><li class="text-sm font-semibold text-white">Careers</li></a
+            >
+          </ul>
+          <button
+            class="px-3 py-2 text-sm font-medium tracking-tight text-black bg-white rounded-md hover:bg-gray-300"
+          >
+            Coming Soon
+          </button>
+        </div>
+      </nav>
+      <!-- Privacy Policy Section -->
+      <section class="w-full px-6 mx-auto my-32 sm:my-48 sm:w-1/2">
+        <h1 class="mb-16 text-6xl font-medium">Privacy</h1>
+        <p class="mb-4 text-xl">Effective: January 1, 2025</p>
+        <p class="mb-16 text-xl">Last updated: November 18, 2024</p>
+        <!-- Introduction -->
+        <h2 class="mb-6 text-3xl font-semibold">Introduction</h2>
+        <p class="mb-16">
+          Welcome to PhotexAI! Your trust is important to us, and we are
+          committed to protecting your privacy and personal data. This Privacy
+          Policy outlines how we collect, use, store, and protect your personal
+          information when you interact with our services. By using PhotexAI,
+          you agree to the terms outlined in this policy.
+        </p>
+        <!-- The Data We Collect -->
+        <h2 class="mb-6 text-3xl font-semibold">The Data We Collect</h2>
+        <p class="mb-4">
+          We collect different types of information from and about users to
+          provide and enhance our services. This includes:
+        </p>
+        <ul class="pl-5 mb-16 space-y-3 list-disc list-outside">
+          <li class="pl-2">
+            <strong class="font-bold">Personal Data:</strong>
+            Personal data includes identifiable information that you provide to
+            us, such as your email address, which we collect when you register
+            for an account, subscribe to updates, or use our services. This type
+            of information is essential for creating your user profile, enabling
+            account-specific services, and facilitating communication between
+            you and PhotexAI. We may use your personal data to send important
+            notifications about updates to our services, respond to inquiries or
+            support requests, and maintain the security of your account. By
+            collecting this information, we ensure that you have a personalized
+            and secure experience when using our platform.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Usage Data:</strong>
+            Usage data refers to information automatically collected when you
+            interact with our platform, encompassing service usage patterns and
+            user activities. This data may include details about how you
+            navigate through the site or app, which features you frequently use,
+            and the time spent on different sections of our services. By
+            analyzing usage data, we gain insights into user behavior, which
+            helps us identify popular features, understand user preferences, and
+            improve the overall functionality and user experience of our
+            platform. This information is crucial for refining our services,
+            optimizing performance, and tailoring future updates to better align
+            with user needs.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Personal Data:</strong>
+            Personal data includes identifiable information that you provide to
+            us, such as your email address, which we collect when you register
+            for an account, subscribe to updates, or use our services. This type
+            of information is essential for creating your user profile, enabling
+            account-specific services, and facilitating communication between
+            you and PhotexAI. We may use your personal data to send important
+            notifications about updates to our services, respond to inquiries or
+            support requests, and maintain the security of your account. By
+            collecting this information, we ensure that you have a personalized
+            and secure experience when using our platform.
+          </li>
+        </ul>
+        <!-- How We Collect Your Data -->
+        <h2 class="mb-6 text-3xl font-semibold">How We Collect Your Data</h2>
+        <p class="mb-4">We collect data in the following ways:</p>
+        <ul class="pl-5 mb-16 space-y-3 list-disc list-outside">
+          <li class="pl-2">
+            <strong class="font-bold">Directly from You:</strong>
+            We collect data directly from you when you take actions such as
+            creating an account, subscribing to services, or engaging with us
+            through support channels or feedback forms. This direct collection
+            ensures that we have accurate information to create and manage your
+            account, tailor services to your needs, and communicate effectively
+            with you regarding updates, features, or support matters. When you
+            actively provide data—whether inputting details during registration,
+            sending an inquiry, or responding to surveys—it empowers us to offer
+            a more personalized experience and address your needs more
+            effectively. Collecting data directly from users also enhances the
+            trustworthiness of our system by confirming that the information is
+            provided by the account owner or user.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Automatically:</strong>
+            We may also collect certain types of data automatically when you
+            interact with our services, allowing us to understand your usage
+            patterns without requiring manual input. This automated data
+            collection can include details such as app interactions, feature
+            usage, or session durations, which help us analyze how our platform
+            is used and identify areas for improvement. However, to protect your
+            privacy and maintain transparency, we do not use cookies or
+            third-party analytics tools that could track your activity across
+            different sites or services. This approach prioritizes user privacy
+            and ensures that any automatic data collection is limited to the
+            operations within our platform, focusing solely on enhancing your
+            experience without invasive tracking or data sharing practices.
+          </li>
+        </ul>
+        <!-- How We Use Your Data -->
+        <h2 class="mb-6 text-3xl font-semibold">How We Use Your Data</h2>
+        <p class="mb-4">We use your data to:</p>
+        <ul class="pl-5 mb-16 space-y-3 list-disc list-outside">
+          <li class="pl-2">
+            <strong class="font-bold">Provide and Maintain Services:</strong>
+            We use your data to ensure that our services are fully operational,
+            reliable, and function seamlessly. This means leveraging your
+            information to support essential functions such as account
+            verification, troubleshooting technical issues, and maintaining the
+            performance of our platform. By analyzing data related to system
+            usage, we can identify and address potential technical problems,
+            optimize service uptime, and continuously improve the stability of
+            our infrastructure. Your data helps us ensure that the platform runs
+            smoothly and efficiently, enabling us to provide a secure and
+            responsive experience that meets your expectations.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Enhance User Experience:</strong>
+            Personalizing your experience is a core part of how we use your
+            data. By understanding your interactions with the platform—such as
+            which features you use most or how you navigate through our
+            services—we can tailor content and adjust the interface to better
+            suit your preferences. This could include suggesting relevant
+            features or streamlining access to tools that align with your usage
+            patterns. Our goal is to make the platform more intuitive and
+            engaging by adapting it to meet your unique needs. The insights we
+            gather from data analysis enable us to introduce enhancements that
+            make your interactions with PhotexAI more efficient and enjoyable.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Communicate with You:</strong>
+            We use your data to stay connected and keep you informed about your
+            use of PhotexAI. This includes sending important notifications such
+            as updates to services, policy changes, or critical information
+            affecting your account. We may also reach out to you regarding new
+            features, support responses, or user surveys to gather feedback.
+            Communication ensures that you remain aware of developments within
+            the platform, from product enhancements to potential service
+            interruptions. Using data-driven communication allows us to maintain
+            transparency, provide timely information, and strengthen our
+            connection with you by delivering relevant updates directly to your
+            inbox.
+          </li>
+        </ul>
+        <!-- Legal Basis for Data Processing -->
+        <h2 class="mb-6 text-3xl font-semibold">
+          Legal Basis for Data Processing
+        </h2>
+        <p class="mb-16">
+          The collection and processing of your personal data at PhotexAI are
+          primarily based on your consent, which is a foundational aspect of our
+          commitment to transparency and user autonomy. By choosing to use our
+          services, you agree to the terms set forth in this Privacy Policy,
+          which includes the collection, processing, and storage of your data
+          for the purposes described. This consent-based approach ensures that
+          you have control over your information and are informed about how it
+          is being used. We obtain your explicit agreement at the point of
+          registration or interaction with our platform, giving you the choice
+          to participate under clear terms.<br /><br />This approach aligns with
+          global data protection standards and ensures that we act within the
+          bounds of legal regulations. Your consent is revocable, meaning you
+          have the right to withdraw it at any time, which will impact how we
+          handle your data moving forward. If you choose to withdraw your
+          consent, we will cease the collection and processing of your data for
+          non-essential purposes and will take steps to delete or anonymize the
+          data where feasible. This reinforces your control over your personal
+          information and exemplifies our dedication to respecting your privacy
+          rights.
+        </p>
+        <!-- How We Share Your Data -->
+        <h2 class="mb-6 text-3xl font-semibold">How We Share Your Data</h2>
+        <p class="mb-16">
+          At PhotexAI, your privacy is paramount, and we are fully committed to
+          protecting your personal information. One of the fundamental
+          principles of our data management practices is that we do not share
+          your personal data with any third parties, ensuring that your
+          information remains confidential and secure within our ecosystem. This
+          means that any data you provide—whether for account creation, service
+          interactions, or communication purposes—is used exclusively to support
+          and enhance your experience with our platform, as described in this
+          Privacy Policy.<br /><br />We take extensive measures to safeguard
+          your data from unauthorized access, ensuring that only our trusted
+          team members and systems with a legitimate need have access to it.
+          This strict access control reinforces our commitment to maintaining
+          your data’s confidentiality. By keeping data processing in-house and
+          avoiding external data-sharing practices, we reduce the risk of data
+          exposure and maintain tighter control over how your information is
+          managed. This policy helps us align with privacy laws and reinforces
+          user trust, reassuring you that your personal data is never sold,
+          shared, or distributed to third-party entities for marketing,
+          analytics, or any other purpose outside the scope of what is stated in
+          our policy. Your data stays secure, protected, and used solely for
+          your benefit.
+        </p>
+        <!-- Data Storage and Security -->
+        <h2 class="mb-6 text-3xl font-semibold">Data Storage and Security</h2>
+        <p class="mb-4">
+          We take the security of your personal data seriously. Your data is
+          stored using Cloudflare and Amazon Web Services (AWS), both of which
+          are known for robust security measures.
+        </p>
+        <ul class="pl-5 mb-16 space-y-3 list-disc list-outside">
+          <li class="pl-2">
+            <strong class="font-bold">Access Controls:</strong>
+            We employ role-based access controls (RBAC) to limit data access to
+            only those employees or personnel whose job functions require it.
+            This ensures that access to sensitive information is strictly
+            managed and monitored. Our access control system enforces the
+            principle of "least privilege," meaning that users and systems are
+            only granted the access necessary for their specific duties. Access
+            logs are maintained to track and audit data handling activities,
+            helping to identify and respond to any unauthorized or unusual
+            access attempts promptly.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold"
+              >Data Anonymization and Pseudonymization:</strong
+            >
+            To enhance the security and privacy of user data, we apply
+            anonymization or pseudonymization practices where feasible.
+            Anonymization involves altering data in such a way that it can no
+            longer be linked back to individual users without additional
+            information that is stored separately. Pseudonymization, on the
+            other hand, replaces personal identifiers with artificial
+            identifiers or pseudonyms, allowing data processing while minimizing
+            exposure of actual user identities. These techniques help to
+            safeguard user data during processing, ensuring that even if data
+            were to be intercepted, the risk of identifying individual users is
+            significantly reduced.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Infrastructure Security:</strong>
+            The data stored on AWS and Cloudflare benefits from highly advanced
+            security protocols designed to protect user information. These
+            platforms employ network firewalls to control resource access and
+            prevent unauthorized intrusions, ensuring that sensitive data is
+            shielded from potential threats. Additionally, AWS and Cloudflare
+            incorporate built-in threat detection and monitoring systems that
+            enable swift identification and response to potential security
+            incidents, enhancing overall protection. To safeguard against data
+            loss, regular data backups are performed, providing redundancy and
+            ensuring that services remain continuous even in the event of
+            unexpected disruptions.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Limitations:</strong>
+            Despite our strong commitment to comprehensive data protection,
+            there are some current limitations in our security measures. We do
+            not currently use multi-factor authentication (MFA) for access to
+            internal data management systems. MFA is known to add an extra layer
+            of security by requiring multiple verification methods before access
+            is granted, and while we recognize its importance, this remains an
+            area for potential future improvement. Additionally, we do not store
+            data in an encrypted format at rest, meaning that while data in
+            transit is protected through encryption (e.g., TLS/SSL), stored data
+            within our databases and storage solutions lacks this additional
+            level of encryption. This aspect is important for users who
+            prioritize full encryption throughout the data lifecycle.
+          </li>
+        </ul>
+        <!-- Retention of Your Data -->
+        <h2 class="mb-6 text-3xl font-semibold">Retention of Your Data</h2>
+        <p class="mb-16">
+          At PhotexAI, we are dedicated to maintaining a responsible approach to
+          data retention, ensuring that your personal information is kept only
+          for as long as necessary to provide our services or comply with
+          applicable legal obligations. This practice supports a balance between
+          offering seamless service continuity and protecting your privacy.
+          Typically, we retain your personal data for a period of 6 months or
+          until you choose to delete your account, whichever comes first. This
+          timeframe allows us to fulfill our service commitments to you, such as
+          maintaining access to your user history, ensuring smooth reactivation
+          of accounts, and enabling accurate customer support.<br /><br />Once
+          the retention period has elapsed or your account is deleted, we take
+          steps to securely remove or anonymize the data. Anonymized data may be
+          retained beyond the typical period for analytical purposes, as it no
+          longer contains personal identifiers and cannot be linked back to any
+          individual. Retaining anonymized data allows us to perform valuable
+          analysis, such as studying service usage trends, enhancing platform
+          functionality, and improving user experience, all while protecting
+          individual privacy. Our data retention policy is aligned with industry
+          standards and regulatory requirements, ensuring that we handle your
+          data responsibly and transparently. Should legal obligations or
+          legitimate interests require an extended retention period, we will act
+          in compliance with those requirements while continuing to prioritize
+          data security and user rights.
+        </p>
+        <!-- Your Rights and Control Over Your Data -->
+        <h2 class="mb-6 text-3xl font-semibold">
+          Your Rights and Control Over Your Data
+        </h2>
+        <p class="mb-4">You have certain rights regarding your data:</p>
+        <ul class="pl-5 mb-16 space-y-3 list-disc list-outside">
+          <li class="pl-2">
+            <strong class="font-bold">Access Your Data:</strong>
+            You have the right to request a copy of the personal data we have
+            collected about you. This means you can see what information we have
+            on record, how it is used, and why it is retained. Accessing your
+            data helps you stay informed about what is being stored and allows
+            you to review it for accuracy.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Correct Your Data:</strong>
+            If you find that any of your personal data is incorrect or
+            incomplete, you have the right to request that we correct or update
+            this information. Ensuring your data is accurate allows us to
+            provide better, more personalized services and maintain the
+            integrity of your user profile. Our team is committed to addressing
+            inaccuracies promptly and ensuring that your personal information
+            reflects your current status.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Delete Your Data:</strong>
+            Should you wish to remove your data from our systems, you have the
+            right to request deletion. This is particularly important if you
+            decide to discontinue using our services or if you have concerns
+            about how your data is being managed. Upon receiving your request,
+            we will take the necessary steps to securely erase your personal
+            data, except where retention is required by law or necessary for
+            legitimate purposes.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Processing Timeline:</strong>
+            We recognize the importance of timely action when it comes to your
+            data requests. We strive to process all user requests for data
+            access, correction, or deletion within 30 business days. This
+            efficient processing ensures that your data rights are upheld
+            without unnecessary delays, giving you confidence that your concerns
+            are addressed promptly.
+          </li>
+        </ul>
+        <!-- Data Portability -->
+        <h2 class="mb-6 text-3xl font-semibold">Data Portability</h2>
+        <p class="mb-16">
+          At this time, we do not offer data portability in a specific format.
+          Data portability refers to the ability for users to receive their
+          personal data in a structured, commonly used, and machine-readable
+          format, allowing them to easily transfer their information to another
+          service provider if desired. While we recognize that data portability
+          can be an important part of user control, this feature is not
+          currently available in our services.<br /><br />The absence of data
+          portability means that if you wish to transfer your data from PhotexAI
+          to another platform or service, you may need to manually collect and
+          re-enter your data or contact us for assistance with an alternative
+          solution. Although we do not yet support automatic data transfers, we
+          are committed to continually evaluating our offerings and considering
+          potential enhancements that align with user needs and emerging
+          industry standards.<br /><br />Our focus remains on safeguarding your
+          data and ensuring that it is managed responsibly within our platform.
+          Should our policy on data portability change in the future, we will
+          provide clear communication and instructions on how to access and
+          transfer your personal data seamlessly. We strive to be transparent
+          and responsive to user needs, and we will continue exploring the
+          feasibility of implementing data portability in a manner that meets
+          our privacy and security standards.
+        </p>
+        <!-- Data Transfers -->
+        <h2 class="mb-6 text-3xl font-semibold">Data Transfers</h2>
+        <p class="mb-16">
+          While our standard data practices do not involve intentionally
+          transferring user data internationally, certain circumstances may
+          arise where data is accessed or processed across borders. This can
+          occur when using third-party services or systems that have
+          infrastructure in multiple countries or when employees or contractors
+          working remotely access data from different regions. Recognizing the
+          importance of protecting your data, we are committed to ensuring that
+          any international data transfers are conducted in a manner that
+          upholds the highest privacy standards.<br /><br />To safeguard your
+          information during such transfers, we utilize internationally
+          recognized legal mechanisms, such as Standard Contractual Clauses
+          (SCCs). SCCs are legal tools approved by the European Commission and
+          other regulatory bodies, designed to provide a consistent level of
+          protection for personal data transferred from within the European
+          Economic Area (EEA) to countries outside it. These clauses mandate
+          that the data recipient must adhere to data protection requirements
+          equivalent to those set by EU regulations, ensuring that your data
+          receives the same level of security and privacy regardless of where it
+          is processed.<br /><br />By implementing these safeguards, we mitigate
+          the risk associated with international data transfers and align with
+          global data protection frameworks, such as the General Data Protection
+          Regulation (GDPR). Our commitment to using SCCs and other protective
+          measures ensures that, even in the case of cross-border data movement,
+          your personal information is managed with the utmost care and in
+          compliance with relevant legal standards. Should international data
+          transfers become a more significant part of our operations, we will
+          continue to evaluate and adopt additional measures to reinforce the
+          safety and integrity of your data.
+        </p>
+        <!-- Data Breach Notification -->
+        <h2 class="mb-6 text-3xl font-semibold">Data Breach Notification</h2>
+        <p class="mb-16">
+          At PhotexAI, maintaining the integrity and security of your personal
+          data is a top priority. However, despite robust security measures,
+          unforeseen incidents can occur. In the event of a data breach, we are
+          committed to responding swiftly and transparently to mitigate any
+          potential impact on our users. If a breach affecting your personal
+          data were to happen, we will promptly notify affected users via email
+          from
+          <a
+            href="mailto:press@photexai.com"
+            class="text-blue-500 hover:underline"
+            >press@photexai.com</a
+          >. This direct communication ensures that you are informed as soon as
+          possible and can take any necessary precautions to protect your
+          information.<br /><br />Our data breach response protocol includes a
+          thorough assessment to identify the scope of the breach, the data
+          impacted, and the potential risk to affected users. We will also
+          detail what measures we have taken to secure the data and prevent
+          further unauthorized access. Our email notification will provide you
+          with all relevant information, including the nature of the breach, the
+          types of data involved, and recommended steps you can take to
+          safeguard your personal information, such as changing passwords or
+          monitoring for suspicious activity.<br /><br />Additionally, we will
+          work with cybersecurity experts to analyze the incident, identify
+          vulnerabilities, and implement improvements to our security framework
+          to prevent similar occurrences in the future. If required by law, we
+          will also inform appropriate data protection authorities to ensure
+          compliance with regulatory obligations. By acting quickly and
+          transparently, we aim to protect your data and maintain your trust in
+          PhotexAI. Our goal is to minimize disruption and potential harm while
+          reinforcing our commitment to safeguarding your personal information.
+        </p>
+        <!-- Protection of Data for Minors -->
+        <h2 class="mb-6 text-3xl font-semibold">
+          Protection of Data for Minors
+        </h2>
+        <p class="mb-16">
+          At PhotexAI, we acknowledge the importance of safeguarding the data of
+          all our users, including those under the age of 18. We collect limited
+          personal data from minors to provide our services effectively, but at
+          present, we do not have additional, specialized safeguards designed
+          explicitly for protecting the data of younger users. This means that
+          the data collected from minors is managed under the same security
+          measures and privacy practices as that of adult users.<br /><br />To
+          further support the protection of minors, we encourage parents and
+          guardians to actively oversee and guide their children's interactions
+          with our platform. This involvement can help ensure that minors use
+          the services responsibly and that their data privacy is maintained. We
+          recommend parents educate their children about safe online practices,
+          including sharing personal information and recognizing potential
+          security risks.<br /><br />While our current infrastructure does not
+          include child-specific privacy protections, we are committed to
+          revisiting our policies regularly to align with evolving privacy
+          standards and best practices for protecting younger users' data.
+          Should new regulations or advancements in data protection tools
+          necessitate changes to our approach, we will adapt our practices to
+          better safeguard the personal information of minors. In the meantime,
+          we rely on the cooperation of parents and guardians to supplement our
+          efforts in maintaining a secure online environment for younger members
+          of our community.
+        </p>
+        <!-- Parental Consent -->
+        <h2 class="mb-6 text-3xl font-semibold">Parental Consent</h2>
+        <p class="mb-16">
+          At PhotexAI, while we are aware of the importance of parental
+          involvement in protecting minors' online privacy, we currently do not
+          require parental consent for users under a certain age to use our
+          services. This means that minors can create accounts and interact with
+          our platform independently. However, we rely on parents and guardians
+          to take an active role in supervising their children's use of our
+          services to ensure a safe and secure experience. We encourage parents
+          to discuss responsible online behavior with their children, review
+          their interactions on the platform, and guide them in making informed
+          decisions when sharing personal information. Parental oversight is a
+          vital supplement to our standard privacy measures, helping to create a
+          safer digital environment for minors. Our commitment to transparency
+          and ongoing evaluation of our policies means we remain open to
+          enhancements that align with best practices for protecting the privacy
+          and security of younger users.
+        </p>
+        <!-- Third-Party Services and Links -->
+        <h2 class="mb-6 text-3xl font-semibold">
+          Third-Party Services and Links
+        </h2>
+        <p class="mb-16">
+          At PhotexAI, we take a focused approach to safeguarding user privacy
+          by ensuring that our platform operates as a self-contained
+          environment. This means that we do not incorporate or embed links to
+          third-party websites, services, or applications. By keeping our
+          ecosystem exclusive, we reduce the risk of exposing user data to
+          external platforms that might have different privacy standards or
+          practices. This design choice helps maintain tighter control over the
+          data flow and security protocols, ensuring that any personal or usage
+          data collected remains securely within PhotexAI's infrastructure and
+          is managed according to our strict privacy guidelines.<br /><br />This
+          closed-loop approach also enhances user trust by eliminating the
+          uncertainties associated with data sharing that could occur when
+          linking to external services. Users can confidently interact with our
+          platform without concern that their data will be redirected, shared,
+          or processed by third-party sites with less rigorous privacy measures.
+          The absence of third-party links means that data collection and
+          processing are solely conducted by PhotexAI, giving us full
+          accountability over how user data is managed. Our commitment to
+          keeping the user experience self-contained allows us to ensure
+          consistent application of our privacy standards and maintain a high
+          level of transparency with our users.
+        </p>
+        <!-- Updates and Changes to the Privacy Policy -->
+        <h2 class="mb-6 text-3xl font-semibold">
+          Updates and Changes to the Privacy Policy
+        </h2>
+        <p class="mb-16">
+          At PhotexAI, maintaining transparency with our users is a priority,
+          and this extends to how we handle updates and changes to our Privacy
+          Policy. We recognize that as our platform evolves or as regulations
+          change, it may be necessary to revise this policy to reflect updates
+          in our data practices, operational needs, or compliance with new legal
+          standards. Whenever we make significant changes to this Privacy
+          Policy, we will ensure that users are made aware through appropriate
+          channels. This includes posting an updated version of the
+          <a
+            href="https://www.PhotexAI.com/privacy"
+            class="text-blue-500 hover:underline"
+            >Privacy Policy</a
+          >
+          page, where users can review it at any time.<br /><br />To enhance
+          transparency, we may also send notifications via email or through
+          in-platform alerts to inform users of critical updates that impact how
+          their data is handled. These communications will outline the nature of
+          the changes, why they were made, and how they might affect your use of
+          the platform or your rights as a user. By keeping you informed, we aim
+          to foster trust and ensure that you remain fully aware of how your
+          personal information is managed. We encourage users to review the
+          Privacy Policy periodically to stay up-to-date with our practices. If
+          you continue to use PhotexAI after an updated policy has been posted,
+          this indicates your acknowledgment and agreement to the revised terms.
+        </p>
+        <!-- Contact Us -->
+        <h2 class="mb-6 text-3xl font-semibold">Contact Us</h2>
+        <p class="mb-16">
+          If you have any questions, concerns, or feedback regarding this
+          Privacy Policy or the way we handle your personal data, we encourage
+          you to reach out to us via email at
+          <a
+            href="mailto:press@photexai.com"
+            class="text-blue-500 hover:underline"
+            >press@photexai.com</a
+          >. Our dedicated team is committed to addressing your inquiries and
+          ensuring that you receive clear and timely responses to any issues
+          related to your privacy. At this time, email support is the primary
+          method for reaching us, but we are committed to maintaining open lines
+          of communication to assist with your privacy needs effectively.
+        </p>
+        <!-- How We Handle Requests and Rights -->
+        <h2 class="mb-6 text-3xl font-semibold">
+          How We Handle Requests and Rights
+        </h2>
+        <p class="mb-4">
+          PhotexAI is committed to ensuring that your rights concerning your
+          personal data are respected and upheld. Our approach to handling user
+          requests is designed to be both transparent and efficient, allowing
+          you to exercise your rights with ease. Whether you need to access your
+          data, request corrections, or delete your information, we are here to
+          support you every step of the way.
+        </p>
+        <ul class="pl-5 mb-16 space-y-3 list-disc list-outside">
+          <li class="pl-2">
+            <strong class="font-bold">Timeframe:</strong>
+            We understand that timely responses are crucial when it comes to
+            managing your personal data. That’s why we aim to process requests
+            for data access, correction, or deletion within 3-5 business days
+            from the date we receive your request. This timeframe reflects our
+            commitment to addressing your needs promptly while ensuring that we
+            follow thorough verification procedures to protect your data
+            security. By processing requests swiftly, we help reinforce your
+            trust in our services and maintain your control over your personal
+            information.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Scope:</strong>
+            Although we do not currently offer data portability in a
+            standardized, machine-readable format, we prioritize enabling you to
+            exercise your rights as seamlessly as possible. This means providing
+            straightforward processes for requesting and reviewing your personal
+            data, updating information when needed, and securely deleting your
+            data upon your request. Our team is dedicated to making sure that,
+            even without data portability options, you can confidently manage
+            your personal data within our platform. We are committed to
+            continuously evaluating our practices to align with user needs and
+            evolving privacy standards, reinforcing our dedication to your data
+            rights.
+          </li>
+        </ul>
+        <!-- Data Processing Practices for Underage Users -->
+        <h2 class="mb-6 text-3xl font-semibold">
+          Data Processing Practices for Underage Users
+        </h2>
+        <p class="mb-16">
+          At PhotexAI, our current data processing practices apply uniformly to
+          all users, including those under 18. While we have standard data
+          protection measures like access controls, secure storage, and
+          anonymization, we do not yet offer specialized safeguards tailored
+          specifically for minors. We encourage parents and guardians to
+          actively supervise their children’s interactions with our platform to
+          ensure a safe and responsible online experience. This oversight helps
+          protect minors and educates them on how to navigate digital spaces
+          securely, including the responsible handling of personal information.
+          <br /><br />We recognize that minors may have distinct privacy needs
+          that could require greater protections. While PhotexAI does not
+          provide child-specific content or services, we are committed to
+          assessing and adapting our policies as privacy regulations and
+          industry best practices evolve. Our ongoing goal is to remain aligned
+          with future changes that promote enhanced data protection for younger
+          users, ensuring that our platform continues to be a safe and secure
+          space for everyone.
+        </p>
+        <!-- Commitment to Privacy -->
+        <h2 class="mb-6 text-3xl font-semibold">Commitment to Privacy</h2>
+        <p class="mb-16">
+          Protecting your privacy is central to PhotexAI’s mission, and we are
+          committed to handling your data with care and transparency. To
+          maintain this commitment, we continually review and update our data
+          protection practices to keep up with evolving standards, regulations,
+          and technological advancements. We prioritize clear communication so
+          that you are always aware of how your data is collected, used, and
+          protected, reinforcing the trust you place in us. If you have any
+          questions or concerns about our data practices or need further
+          clarification, our team is ready to assist—please contact us at
+          <a
+            href="mailto:press@photexai.com"
+            class="text-blue-500 hover:underline"
+            >press@photexai.com</a
+          >.
+        </p>
+      </section>
+      <section class="w-full h-auto">
+        <!-- Desktop Footer -->
+        <footer class="w-full p-5 bg-black sm:p-10">
+          <div class="mx-auto max-w-screen-3xl sm:w-full 2xl:w-4/6">
+            <div class="-mx-1 sm:-mx-4 2xl:-mx-0 md:flex md:justify-between">
+              <div class="mb-6 md:mb-0">
+                <a href="https://photexai.com" class="flex items-center">
+                  <img
+                    src="../assets/photexai_wordmark_white.png"
+                    alt="Logo"
+                    class="h-10"
+                  />
+                </a>
+              </div>
+              <div
+                class="grid grid-cols-1 gap-8 sm:gap-16 md:grid-cols-4 lg:grid-cols-4"
+              >
+                <!-- Research Section -->
+                <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white">
+                    Research
+                  </h2>
+                  <ul class="text-sm text-gray-300">
+                    <!-- Articore -->
+                    <li>
+                      <a href="#" class="font-medium hover:underline"
+                        >Articore</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Company Section -->
+                <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white">Company</h2>
+                  <ul class="text-sm text-gray-300">
+                    <!-- About -->
+                    <li class="mb-4">
+                      <a href="#" class="font-medium hover:underline">About</a>
+                    </li>
+                    <!-- Blog -->
+                    <li class="mb-4">
+                      <a href="#" class="font-medium hover:underline">Blog</a>
+                    </li>
+                    <!-- Careers -->
+                    <li>
+                      <a href="#" class="font-medium hover:underline"
+                        >Careers</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Follow Section -->
+                <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white">Follow</h2>
+                  <ul class="text-sm text-gray-300">
+                    <!-- Discord -->
+                    <li class="mb-4">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.instagram.com/photexai/"
+                        class="font-medium hover:underline"
+                        >Discord</a
+                      >
+                    </li>
+                    <!-- Instagram -->
+                    <li class="mb-4">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.instagram.com/photexai/"
+                        class="font-medium hover:underline"
+                        >Instagram</a
+                      >
+                    </li>
+                    <!-- Reddit -->
+                    <li class="mb-4">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.reddit.com/r/photexai/"
+                        class="font-medium hover:underline"
+                        >Reddit</a
+                      >
+                    </li>
+                    <!-- TikTok -->
+                    <li class="mb-4">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.tiktok.com/@photexai"
+                        class="font-medium hover:underline"
+                        >TikTok</a
+                      >
+                    </li>
+                    <!-- X (Twitter) -->
+                    <li class="mb-4">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://x.com/photexai"
+                        class="font-medium hover:underline"
+                        >X (Twitter)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Legal Section -->
+                <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white">Legal</h2>
+                  <ul class="text-sm text-gray-300">
+                    <!-- Privacy -->
+                    <li class="mb-4">
+                      <a
+                        href="https://flowbite.com"
+                        class="font-medium hover:underline"
+                        >Privacy</a
+                      >
+                    </li>
+                    <!-- Usage -->
+                    <li>
+                      <a
+                        href="https://flowbite.com"
+                        class="font-medium hover:underline"
+                        >Usage</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="my-6 sm:mx-autoborder-zinc-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <span class="text-sm text-white sm:text-center"
+                >© 2024
+                <a href="https://flowbite.com" class="hover:underline"
+                  >PhotexAI</a
+                >
+              </span>
+              <!-- Social Media Icon Links -->
+              <div
+                class="flex mt-4 space-x-6 sm:items-center sm:justify-center sm:mt-0"
+              >
+                <!-- Discord -->
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="#"
+                  class="text-white"
+                >
+                  <svg
+                    class="text-white size-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18.942 5.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.586 11.586 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3 17.392 17.392 0 0 0-2.868 11.662 15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.638 10.638 0 0 1-1.706-.83c.143-.106.283-.217.418-.331a11.664 11.664 0 0 0 10.118 0c.137.114.277.225.418.331-.544.328-1.116.606-1.71.832a12.58 12.58 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM8.678 14.813a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.929 1.929 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                    />
+                  </svg>
+                </a>
+                <!-- Instagram -->
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/photexai/"
+                  class="text-white"
+                >
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <!-- Reddit -->
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.reddit.com/r/photexai/"
+                  class="text-white"
+                >
+                  <svg
+                    class="text-white size-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12.008 16.521a3.84 3.84 0 0 0 2.47-.77v.04a.281.281 0 0 0 .005-.396.281.281 0 0 0-.395-.005 3.291 3.291 0 0 1-2.09.61 3.266 3.266 0 0 1-2.081-.63.27.27 0 0 0-.38.381 3.84 3.84 0 0 0 2.47.77Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-4.845-1.407A1.463 1.463 0 0 1 18.67 12a1.46 1.46 0 0 1-.808 1.33c.01.146.01.293 0 .44 0 2.242-2.61 4.061-5.829 4.061s-5.83-1.821-5.83-4.061a3.25 3.25 0 0 1 0-.44 1.458 1.458 0 0 1-.457-2.327 1.458 1.458 0 0 1 2.063-.064 7.163 7.163 0 0 1 3.9-1.23l.738-3.47v-.006a.31.31 0 0 1 .37-.236l2.452.49a1 1 0 1 1-.132.611l-2.14-.45-.649 3.12a7.11 7.11 0 0 1 3.85 1.23c.259-.246.6-.393.957-.405Z"
+                      clip-rule="evenodd"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M15.305 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-4.625 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"
+                    />
+                  </svg>
+                </a>
+                <!-- TikTok -->
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.tiktok.com/@photexai"
+                  class="text-white"
+                >
+                  <svg
+                    fill="#ffffff"
+                    class="text-white size-5"
+                    viewBox="0 0 32 32"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>tiktok</title>
+                    <path
+                      d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"
+                    ></path>
+                  </svg>
+                </a>
+                <!-- X (Twitter) -->
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://x.com/photexai"
+                  class="text-white"
+                >
+                  <svg
+                    class="text-white size-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>
