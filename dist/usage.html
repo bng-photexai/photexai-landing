@@ -1,0 +1,830 @@
+<!doctype html>
+<html class="font-inter">
+  <head>
+    <!-- Title -->
+    <title>PhotexAI | Usage</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <link rel="stylesheet" href="output.css" />
+    <!-- Dark Mode Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      media="(prefers-color-scheme: dark)"
+      href="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/5c6850ee-40ab-478f-32a4-20edd3362300/public"
+    />
+    <!-- Light Mode Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      media="(prefers-color-scheme: light)"
+      href="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/e39e8e1f-8a6a-40a6-fd37-25d12731f600/public"
+    />
+  </head>
+
+  <body class="w-full h-screen text-white bg-black">
+    <div class="flex flex-col w-full h-full">
+      <!-- Mobile Navigation Bar -->
+      <nav
+        class="fixed z-10 flex flex-row items-center justify-between w-full h-16 p-4 bg-black navbar lg:hidden"
+      >
+        <!-- Wordmark Logo -->
+        <div>
+          <a href="https://photexai.com/">
+            <img
+              src="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/3ac088c0-9f84-4573-8bbc-8479824ce400/public"
+              alt="Logo"
+              class="h-10"
+            />
+          </a>
+        </div>
+        <!-- Open Mobile Navigation Button -->
+        <button class="open-mobile-navbar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="text-white size-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </nav>
+      <!-- Mobile Navigation Bar (Opened)-->
+      <nav
+        class="fixed z-20 flex-col items-start hidden w-full h-full px-4 py-3 bg-black mobile-navbar lg:hidden"
+      >
+        <div class="flex flex-row justify-between w-full">
+          <!-- Wordmark Logo -->
+          <div>
+            <a href="https://photexai.com/">
+              <img
+                src="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/3ac088c0-9f84-4573-8bbc-8479824ce400/public"
+                alt="Logo"
+                class="h-10"
+              />
+            </a>
+          </div>
+          <!-- Exit Mobile Navigation Button -->
+          <button class="close-mobile-navbar-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="text-white size-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Navigation Links -->
+        <ul class="flex flex-col items-start justify-center my-12 gap-y-8">
+          <!-- Articore -->
+          <a href="https://photexai.com/articore"
+            ><li class="text-3xl font-medium text-white">Articore</li></a
+          >
+          <!-- About -->
+          <a href="https://photexai.com/about"
+            ><li class="text-3xl font-medium text-white">About</li></a
+          >
+          <!-- Blog -->
+          <a href="https://photexai.com/blog"
+            ><li class="text-3xl font-medium text-white">Blog</li></a
+          >
+          <!-- Careers -->
+          <a href="https://photexai.com/careers"
+            ><li class="text-3xl font-medium text-white">Careers</li></a
+          >
+        </ul>
+      </nav>
+      <!-- Desktop Navigation Bar -->
+      <nav
+        class="fixed z-20 flex-row items-center justify-center hidden w-full h-16 bg-black navbar lg:flex"
+      >
+        <div class="flex flex-row justify-between w-full mx-4 2xl:w-4/6">
+          <!-- Wordmark Logo -->
+          <div>
+            <a href="https://photexai.com/">
+              <img
+                src="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/3ac088c0-9f84-4573-8bbc-8479824ce400/public"
+                alt="Logo"
+                class="h-10"
+              />
+            </a>
+          </div>
+          <!-- Navigation Links -->
+          <ul class="flex flex-row items-center justify-center gap-x-8">
+            <!-- Articore -->
+            <a href="https://photexai.com/articore"
+              ><li class="text-sm font-semibold text-white">Articore</li></a
+            >
+            <!-- About -->
+            <a href="https://photexai.com/about"
+              ><li class="text-sm font-semibold text-white">About</li></a
+            >
+            <!-- Blog -->
+            <a href="https://photexai.com/blog"
+              ><li class="text-sm font-semibold text-white">Blog</li></a
+            >
+            <!-- Careers -->
+            <a href="https://photexai.com/careers"
+              ><li class="text-sm font-semibold text-white">Careers</li></a
+            >
+          </ul>
+          <!-- Coming Soon Badge -->
+          <div
+            class="flex items-center justify-center px-3 py-2 text-sm font-medium tracking-tight text-black bg-white rounded-md hover:bg-gray-300"
+          >
+            Coming Soon
+          </div>
+        </div>
+      </nav>
+      <!-- Usage Policy Section -->
+      <section class="w-full px-6 mx-auto my-32 sm:my-48 sm:w-1/2">
+        <h1 class="mb-16 text-6xl font-medium">Usage</h1>
+        <p class="mb-4 text-xl">Effective: January 1, 2025</p>
+        <p class="mb-16 text-xl">Last updated: November 18, 2024</p>
+        <!-- Introduction -->
+        <h2 class="mb-6 text-3xl font-semibold">Introduction</h2>
+        <p class="mb-16">
+          Welcome to PhotexAI! By accessing or using our services, you agree to
+          be bound by these Terms & Conditions. This document outlines the terms
+          of use, your rights, and your obligations while interacting with our
+          platform. Please read these terms carefully, as they contain important
+          information about your use of our services and your legal rights. If
+          you do not agree to these terms, you must not use our services.
+        </p>
+        <!-- User Account Responsibilities -->
+        <h2 class="mb-6 text-3xl font-semibold">
+          User Account Responsibilities
+        </h2>
+        <p class="mb-16">
+          To access our services, users must create an account. During the
+          registration process, users agree to provide accurate, current, and
+          complete information. Users are responsible for updating their account
+          details to ensure that the information remains accurate.<br /><br />Users
+          must maintain the confidentiality of their account credentials,
+          including their username and password. It is essential to take
+          adequate precautions to safeguard these details, such as using strong,
+          unique passwords and not sharing login information with others. Users
+          are solely responsible for all activities conducted under their
+          account, whether or not they have authorized such activities.<br /><br />PhotexAI
+          will not be held liable for any loss or damage arising from a failure
+          to comply with these obligations. If unauthorized access or any
+          security breach is detected, users must notify PhotexAI promptly at
+          press@photexai.com. PhotexAI reserves the right to suspend or
+          terminate an account if it determines that unauthorized activity has
+          occurred or if users violate the Terms & Conditions.
+        </p>
+        <!-- Eligibility -->
+        <h2 class="mb-6 text-3xl font-semibold">Eligibility</h2>
+        <p class="mb-16">
+          PhotexAI’s services are available to users of all ages and from any
+          location. By creating an account, users confirm they have the legal
+          capacity to enter into binding agreements. Users under 18 should use
+          the platform with parental or guardian supervision to ensure
+          responsible use and adherence to safety practices. Users are
+          responsible for complying with their local laws when accessing
+          PhotexAI, as we make no guarantee of service appropriateness in all
+          regions. If eligibility terms are violated or false information is
+          provided, PhotexAI reserves the right to suspend or terminate access.
+        </p>
+        <!-- Prohibited Actions -->
+        <h2 class="mb-6 text-3xl font-semibold">
+          Spamming or Distributing Unsolicited Messages:
+        </h2>
+        <p class="mb-4">
+          Users must refrain from sending mass, unsolicited, or repetitive
+          communications to other users or external contacts through the
+          platform. This includes commercial promotions, advertisements, or any
+          form of spam that disrupts the normal user experience.
+        </p>
+        <ul class="pl-5 mb-16 space-y-3 list-disc list-outside">
+          <li class="pl-2">
+            <strong class="font-bold"
+              >Uploading or Sharing Harmful Content:</strong
+            >
+            It is forbidden to upload, share, or disseminate content that is
+            harmful, illegal, defamatory, abusive, or that infringes on the
+            intellectual property or privacy rights of others. This includes any
+            content that promotes violence, hate speech, harassment, or
+            discrimination based on race, ethnicity, gender, religion,
+            disability, or any other protected characteristic.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Disrupting Platform Security:</strong>
+            Users must not engage in activities that threaten the integrity,
+            performance, or security of the platform. This includes attempting
+            to bypass security measures, deploying malware, or using any methods
+            designed to disrupt the functionality of the platform, such as
+            denial-of-service (DoS) attacks or other cyber threats.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold"
+              >Fraudulent or Deceptive Practices:</strong
+            >
+            Engaging in deceptive or fraudulent behavior, such as impersonating
+            another person or entity, misrepresenting affiliations, or
+            conducting scams, is strictly prohibited. Any attempt to manipulate
+            or deceive other users or the platform for personal or financial
+            gain is considered a serious violation.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Unauthorized Access and Misuse:</strong>
+            Users must not attempt to gain unauthorized access to other users'
+            accounts, data, or the underlying infrastructure of the platform.
+            This includes circumventing access controls, exploiting
+            vulnerabilities, or using automated scripts to extract data or
+            engage with the platform.
+          </li>
+          <li class="pl-2">
+            <strong class="font-bold">Violation of Applicable Laws:</strong>
+            All users must comply with relevant local, state, national, and
+            international laws when using the platform. Any action that
+            contravenes legal standards, whether through content or conduct, is
+            not allowed.
+          </li>
+        </ul>
+        <!-- License to Use -->
+        <h2 class="mb-6 text-3xl font-semibold">License to Use</h2>
+        <p class="mb-16">
+          Users are granted a limited, non-exclusive, non-transferable, and
+          revocable license to access and use the services provided by PhotexAI.
+          This license allows users to interact with the platform and its
+          features for personal use, and also for commercial purposes when
+          participating in approved payment plans to sell their user-generated
+          content, as permitted by PhotexAI's policies and guidelines. Users may
+          not sell, rent, lease, or sublicense any aspect of the services
+          provided.<br /><br />This license does not grant users ownership of
+          any intellectual property or content on the platform, including but
+          not limited to software, design elements, logos, or proprietary data.
+          Users are prohibited from modifying, copying, distributing, creating
+          derivative works, reverse-engineering, or attempting to extract source
+          code from any part of PhotexAI’s services without explicit
+          authorization.<br /><br />The license may be revoked at PhotexAI's
+          discretion, especially in cases where users are found to have violated
+          the Terms & Conditions, engaged in prohibited conduct, or breached any
+          agreements relating to their use of the platform. PhotexAI reserves
+          the right to terminate or modify the terms of the license at any time,
+          ensuring that users are notified of significant changes through the
+          official platform communication channels.<br /><br />By using
+          PhotexAI’s services, users agree to respect these terms and
+          acknowledge that their access is contingent upon adherence to these
+          conditions. Failure to comply with the terms of the license can result
+          in restricted access or the suspension of user privileges.
+        </p>
+        <!-- Third-Party Services -->
+        <h2 class="mb-6 text-3xl font-semibold">Third-Party Services</h2>
+        <p class="mb-16">
+          While PhotexAI strives to maintain seamless integration with
+          third-party services, users acknowledge that these services are
+          subject to updates and changes beyond PhotexAI’s control, which may
+          impact functionality. Users are responsible for staying informed of
+          these updates to ensure compliance and uninterrupted use of these
+          features.<br /><br />PhotexAI takes reasonable measures to securely
+          integrate third-party tools but cannot be held liable for any data
+          issues, disputes, or performance concerns arising from their use. By
+          engaging with these services, users consent to the potential sharing
+          of relevant usage data to facilitate functionality and improvements.
+        </p>
+        <!-- Disclaimers and Limitation of Liability -->
+        <h2 class="mb-6 text-3xl font-semibold">
+          Disclaimers and Limitation of Liability
+        </h2>
+        <p class="mb-16">
+          The services provided by PhotexAI are offered on an "as is" and "as
+          available" basis, without any warranties, whether expressed or
+          implied. This includes, but is not limited to, implied warranties of
+          merchantability, fitness for a particular purpose, non-infringement,
+          or any warranty arising from a course of dealing or usage of trade.
+          While PhotexAI strives to provide a reliable and secure service, it
+          does not guarantee that the platform will be free from interruptions,
+          security vulnerabilities, errors, or that any defects will be
+          corrected promptly<br /><br />Users acknowledge that they access and
+          use PhotexAI's services at their own risk. PhotexAI is not liable for
+          any direct, indirect, incidental, consequential, or punitive damages
+          that may result from the use of, or the inability to use, the
+          platform. This includes, but is not limited to, damages for loss of
+          data, revenue, profits, or other economic advantage, even if PhotexAI
+          has been advised of the possibility of such damages. Furthermore,
+          PhotexAI is not responsible for any harm caused by third-party
+          services or integrations, including issues arising from the use of
+          external tools such as Stable Diffusion by Stability AI.<br /><br />PhotexAI
+          disclaims any responsibility for service disruptions or failures
+          beyond its reasonable control, such as those caused by technical
+          issues, cyberattacks, or force majeure events. Users are advised to
+          take necessary precautions, such as backing up data and ensuring
+          robust security measures on their devices, to mitigate potential
+          risks. The limitation of liability outlined here applies to the
+          fullest extent permitted by law, ensuring users understand that the
+          use of PhotexAI's services comes with inherent limitations and risks.
+        </p>
+        <!-- Termination Policy -->
+        <h2 class="mb-6 text-3xl font-semibold">Termination Policy</h2>
+        <p class="mb-16">
+          PhotexAI reserves the right to suspend or terminate user accounts or
+          restrict access at any time, with or without cause, and without prior
+          notice, if a user violates these Terms & Conditions or engages in
+          prohibited conduct. Such conduct includes fraudulent activities,
+          unauthorized use, or actions compromising platform security or
+          compliance.<br /><br />Suspension or termination may result in the
+          loss of access to associated data, and users are responsible for
+          maintaining their own backups. While PhotexAI may offer an appeal
+          process, it is not obligated to reinstate accounts or provide
+          alternative solutions. Severe violations may lead to permanent bans
+          from creating new accounts or accessing services.
+        </p>
+        <!-- Intellectual Property -->
+        <h2 class="mb-6 text-3xl font-semibold">Intellectual Property</h2>
+        <p class="mb-16">
+          All intellectual property rights related to the platform, including
+          but not limited to software code, design elements, graphics, logos,
+          content, and other proprietary materials, are owned exclusively by
+          PhotexAI. These rights are protected under applicable copyright,
+          trademark, and other intellectual property laws. Users do not acquire
+          any ownership rights or licenses to the intellectual property by using
+          the platform, other than the limited license granted to access and use
+          the services in accordance with these Terms & Conditions.<br /><br />Unauthorized
+          use, reproduction, distribution, modification, or creation of
+          derivative works based on any part of PhotexAI’s intellectual property
+          is strictly prohibited without express written consent from PhotexAI.
+          This includes scraping, reverse engineering, decompiling, or
+          attempting to derive the source code or underlying ideas from any
+          aspect of the platform. Any unauthorized action may result in the
+          suspension or termination of user access and could lead to legal
+          action.<br /><br />Users are encouraged to respect the intellectual
+          property rights of PhotexAI and other users. If users wish to
+          reference or use any part of the platform for educational,
+          journalistic, or other permissible purposes, they must seek prior
+          permission from PhotexAI and provide appropriate acknowledgment where
+          applicable. Violations of this policy undermine the security and
+          integrity of the platform and will be dealt with according to the
+          extent of the breach, ensuring protection of PhotexAI’s proprietary
+          assets.
+        </p>
+        <!-- Modifications to the Terms -->
+        <h2 class="mb-6 text-3xl font-semibold">Modifications to the Terms</h2>
+        <p class="mb-16">
+          PhotexAI reserves the right to modify, amend, or update these Terms &
+          Conditions at any time to reflect changes in our services, legal
+          requirements, or business practices. Any modifications will be
+          effective immediately upon posting the revised version of our
+          <a
+            href="https://photexai.com/usage"
+            class="text-blue-500 hover:underline"
+            >Usage Policy</a
+          >. Users are responsible for reviewing the Terms regularly to stay
+          informed about any updates.<br /><br />Notification of significant
+          changes will be provided through prominent notices on the website or
+          via other communication channels, such as email, to ensure users are
+          aware of any revisions that may impact their use of the platform.
+          Continued use of the services following the posting of modified Terms
+          constitutes acceptance of those changes. If a user does not agree to
+          the new terms, they must cease using the platform and may request the
+          closure of their account.<br /><br />PhotexAI aims to maintain
+          transparency by providing users with clear and accessible updates
+          regarding changes to the Terms & Conditions. This ensures that users
+          are consistently aware of their rights and obligations when using the
+          platform.
+        </p>
+        <!-- Dispute Resolution -->
+        <h2 class="mb-6 text-3xl font-semibold">Dispute Resolution</h2>
+        <p class="mb-16">
+          Any disputes or claims arising out of or in connection with these
+          Terms & Conditions, including issues relating to the use of the
+          platform, user rights, or any breach of these terms, shall be resolved
+          through binding arbitration or litigation, as deemed appropriate. This
+          process ensures that both PhotexAI and the user engage in a fair and
+          structured method of dispute resolution.<br /><br />Binding
+          arbitration will be conducted in accordance with the rules of a
+          recognized arbitration institution, and the decision of the arbitrator
+          shall be final and binding on both parties. Arbitration proceedings
+          shall be held in a mutually agreed location, or otherwise determined
+          by PhotexAI, and conducted in English. By agreeing to these Terms,
+          users waive the right to pursue claims in a court of law or
+          participate in class action lawsuits, except as prohibited by
+          applicable law.<br /><br />In cases where arbitration is not suitable
+          or legally enforceable, litigation may proceed in the courts located
+          in the jurisdiction stipulated under the "Governing Law" section. Both
+          parties agree to submit to the exclusive jurisdiction of these courts
+          for the resolution of any disputes not resolved by arbitration.
+          PhotexAI strives to settle conflicts fairly and efficiently, ensuring
+          that user concerns are addressed through established, impartial
+          processes.
+        </p>
+        <!-- User Consent -->
+        <h2 class="mb-6 text-3xl font-semibold">User Consent</h2>
+        <p class="mb-16">
+          By creating an account and using PhotexAI's services, users signify
+          their agreement to these Terms & Conditions and acknowledge that they
+          have read, understood, and accept the terms outlined herein. This
+          consent includes adherence to all policies, guidelines, and any
+          subsequent modifications that PhotexAI may implement. Users agree that
+          their continued access and use of the platform constitutes binding
+          acceptance of the terms, including any updates or changes communicated
+          via the website or other official channels. By consenting, users
+          commit to complying with all rules regarding platform conduct, content
+          usage, and interactions with other users or third-party services.
+          Furthermore, users understand that failure to comply with these terms
+          may result in restricted access, suspension, or termination of their
+          account. Users are encouraged to review these Terms periodically to
+          stay informed about their responsibilities and any modifications that
+          may affect their use of the platform. This proactive consent
+          underscores the user’s role in fostering a safe and legally compliant
+          environment for all participants on the platform.
+        </p>
+        <!-- Governing Law -->
+        <h2 class="mb-6 text-3xl font-semibold">Governing Law</h2>
+        <p class="mb-16">
+          These Terms & Conditions, and any disputes or claims arising from
+          their interpretation or use of the platform, shall be governed by and
+          construed in accordance with the laws of the United States of America,
+          without regard to conflict of law principles. This ensures that any
+          legal questions involving PhotexAI’s services will be handled under
+          U.S. law, promoting consistency and predictability in legal
+          proceedings.<br /><br />Users agree that any legal actions related to
+          these Terms will be brought exclusively in the federal or state courts
+          specified by PhotexAI, which users accept as the appropriate venue. By
+          agreeing to these Terms, users consent to the jurisdiction and
+          judicial processes of U.S. courts, providing clarity and a legal
+          framework for resolving any disputes.
+        </p>
+        <!-- Payment Terms -->
+        <h2 class="mb-6 text-3xl font-semibold">Payment Terms</h2>
+        <p class="mb-16">
+          At present, PhotexAI’s services are offered free of charge, with no
+          payment plans or associated fees required for basic usage. Users can
+          access and utilize the platform’s features without incurring costs,
+          fostering an inclusive environment that encourages creativity and
+          participation. However, PhotexAI reserves the right to introduce
+          payment plans, subscription models, or other fee-based services in the
+          future as the platform evolves and expands its offerings.<br /><br />If
+          and when payment options are implemented, users will be notified in
+          advance, and detailed information about pricing, billing cycles, and
+          payment methods will be provided. Users will have the opportunity to
+          review and agree to any new payment terms before subscribing to
+          fee-based services. The introduction of paid features will be
+          structured to maintain transparency, ensuring users understand any
+          associated costs and can make informed decisions about their use of
+          the platform.<br /><br />Users who choose to engage in future paid
+          services must comply with any updated payment terms, which may include
+          policies related to refunds, cancellations, and billing disputes.
+          PhotexAI will ensure that all payment processes are secure and
+          compliant with industry standards, protecting user financial
+          information and providing a reliable transactional experience.
+        </p>
+        <!-- Service Availability -->
+        <h2 class="mb-6 text-3xl font-semibold">Service Availability</h2>
+        <p class="mb-16">
+          PhotexAI is committed to providing reliable and continuous access to
+          its services; however, users acknowledge that occasional service
+          downtimes may occur due to planned maintenance, system updates, or
+          unforeseen technical issues. In such instances, PhotexAI will make
+          reasonable efforts to notify users in advance of planned maintenance
+          or anticipated disruptions through email or other communication
+          channels. For unexpected outages or technical difficulties that affect
+          service availability, PhotexAI will communicate updates as promptly as
+          possible, outlining the nature of the issue and any estimated
+          resolution times. While PhotexAI strives to minimize disruptions and
+          maintain optimal service performance, users agree that service
+          interruptions may occur and that PhotexAI is not liable for any
+          consequences resulting from these temporary unavailabilities.
+        </p>
+        <!-- Contact Us -->
+        <h2 class="mb-6 text-3xl font-semibold">Contact Us</h2>
+        <p class="mb-16">
+          If you have any questions, concerns, or feedback regarding this Usage
+          Policy or the way our services are provided, we encourage you to reach
+          out to us via email at
+          <a
+            href="mailto:press@photexai.com"
+            class="text-blue-500 hover:underline"
+            >press@photexai.com</a
+          >. Our dedicated team is committed to addressing your inquiries and
+          ensuring that you receive clear and timely responses to any issues
+          related to your use of the platform. At this time, email support is
+          the primary method for contacting us, but we remain committed to
+          maintaining open lines of communication to assist with your needs
+          effectively.
+        </p>
+      </section>
+      <section class="w-full h-auto">
+        <!-- Desktop Footer -->
+        <footer class="w-full p-5 bg-black sm:p-10">
+          <div class="mx-auto max-w-screen-3xl sm:w-full 2xl:w-4/6">
+            <div class="-mx-1 sm:-mx-4 2xl:-mx-0 md:flex md:justify-between">
+              <div class="mb-6 md:mb-0">
+                <!-- Wordmark Logo -->
+                <a href="https://photexai.com" class="flex items-center">
+                  <img
+                    src="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/3ac088c0-9f84-4573-8bbc-8479824ce400/public"
+                    alt="Logo"
+                    class="h-10"
+                  />
+                </a>
+              </div>
+              <div
+                class="grid grid-cols-1 gap-8 sm:gap-16 md:grid-cols-4 lg:grid-cols-4"
+              >
+                <!-- Research Section -->
+                <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white">
+                    Research
+                  </h2>
+                  <ul class="text-sm text-gray-300">
+                    <!-- Articore -->
+                    <li>
+                      <a
+                        href="https://photexai.com/articore"
+                        class="font-medium hover:underline"
+                        >Articore</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Company Section -->
+                <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white">Company</h2>
+                  <ul class="text-sm text-gray-300">
+                    <!-- About -->
+                    <li class="mb-4">
+                      <a
+                        href="https://photexai.com/about"
+                        class="font-medium hover:underline"
+                        >About</a
+                      >
+                    </li>
+                    <!-- Blog -->
+                    <li class="mb-4">
+                      <a
+                        href="https://photexai.com/blog"
+                        class="font-medium hover:underline"
+                        >Blog</a
+                      >
+                    </li>
+                    <!-- Careers -->
+                    <li>
+                      <a
+                        href="https://photexai.com/careers"
+                        class="font-medium hover:underline"
+                        >Careers</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Follow Section -->
+                <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white">Follow</h2>
+                  <ul class="text-sm text-gray-300">
+                    <!-- Discord -->
+                    <li class="mb-4">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://discord.gg/zYWRy5t2fu"
+                        class="font-medium hover:underline"
+                        >Discord</a
+                      >
+                    </li>
+                    <!-- Instagram -->
+                    <li class="mb-4">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.instagram.com/photexai/"
+                        class="font-medium hover:underline"
+                        >Instagram</a
+                      >
+                    </li>
+                    <!-- Reddit -->
+                    <li class="mb-4">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.reddit.com/r/photexai/"
+                        class="font-medium hover:underline"
+                        >Reddit</a
+                      >
+                    </li>
+                    <!-- TikTok -->
+                    <li class="mb-4">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.tiktok.com/@photexai"
+                        class="font-medium hover:underline"
+                        >TikTok</a
+                      >
+                    </li>
+                    <!-- X (Twitter) -->
+                    <li class="mb-4">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://x.com/photexai"
+                        class="font-medium hover:underline"
+                        >X (Twitter)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Legal Section -->
+                <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white">Legal</h2>
+                  <ul class="text-sm text-gray-300">
+                    <!-- Privacy -->
+                    <li class="mb-4">
+                      <a
+                        href="https://photexai.com/privacy"
+                        class="font-medium hover:underline"
+                        >Privacy</a
+                      >
+                    </li>
+                    <!-- Usage -->
+                    <li>
+                      <a
+                        href="https://photexai.com/usage"
+                        class="font-medium hover:underline"
+                        >Usage</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="my-6 sm:mx-autoborder-zinc-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <span class="text-sm text-white sm:text-center"
+                >© 2024
+                <a href="https://photexai.com/" class="hover:underline"
+                  >PhotexAI</a
+                >
+              </span>
+              <!-- Social Media Icon Links -->
+              <div
+                class="flex mt-4 space-x-6 sm:items-center sm:justify-center sm:mt-0"
+              >
+                <!-- Discord -->
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://discord.gg/zYWRy5t2fu"
+                  class="text-white"
+                >
+                  <svg
+                    class="text-white size-6"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18.942 5.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.586 11.586 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3 17.392 17.392 0 0 0-2.868 11.662 15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.638 10.638 0 0 1-1.706-.83c.143-.106.283-.217.418-.331a11.664 11.664 0 0 0 10.118 0c.137.114.277.225.418.331-.544.328-1.116.606-1.71.832a12.58 12.58 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM8.678 14.813a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.929 1.929 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                    />
+                  </svg>
+                </a>
+                <!-- Instagram -->
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/photexai/"
+                  class="text-white"
+                >
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <!-- Reddit -->
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.reddit.com/r/photexai/"
+                  class="text-white"
+                >
+                  <svg
+                    class="text-white size-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12.008 16.521a3.84 3.84 0 0 0 2.47-.77v.04a.281.281 0 0 0 .005-.396.281.281 0 0 0-.395-.005 3.291 3.291 0 0 1-2.09.61 3.266 3.266 0 0 1-2.081-.63.27.27 0 0 0-.38.381 3.84 3.84 0 0 0 2.47.77Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-4.845-1.407A1.463 1.463 0 0 1 18.67 12a1.46 1.46 0 0 1-.808 1.33c.01.146.01.293 0 .44 0 2.242-2.61 4.061-5.829 4.061s-5.83-1.821-5.83-4.061a3.25 3.25 0 0 1 0-.44 1.458 1.458 0 0 1-.457-2.327 1.458 1.458 0 0 1 2.063-.064 7.163 7.163 0 0 1 3.9-1.23l.738-3.47v-.006a.31.31 0 0 1 .37-.236l2.452.49a1 1 0 1 1-.132.611l-2.14-.45-.649 3.12a7.11 7.11 0 0 1 3.85 1.23c.259-.246.6-.393.957-.405Z"
+                      clip-rule="evenodd"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M15.305 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-4.625 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"
+                    />
+                  </svg>
+                </a>
+                <!-- TikTok -->
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.tiktok.com/@photexai"
+                  class="text-white"
+                >
+                  <svg
+                    fill="#ffffff"
+                    class="text-white size-4"
+                    viewBox="0 0 32 32"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>tiktok</title>
+                    <path
+                      d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"
+                    ></path>
+                  </svg>
+                </a>
+                <!-- X (Twitter) -->
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://x.com/photexai"
+                  class="text-white"
+                >
+                  <svg
+                    class="text-white size-4"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <!-- JS Scripts -->
+    <script>
+      // navbar_open.js
+      const openMobileNavbarButton = document.querySelector(
+        ".open-mobile-navbar-button"
+      );
+      const closeMobileNavbarButton = document.querySelector(
+        ".close-mobile-navbar-button"
+      );
+      const mobileNavbar = document.querySelector(".mobile-navbar");
+
+      if (openMobileNavbarButton && closeMobileNavbarButton && mobileNavbar) {
+        openMobileNavbarButton.addEventListener("click", () => {
+          mobileNavbar.classList.remove("hidden");
+        });
+
+        closeMobileNavbarButton.addEventListener("click", () => {
+          mobileNavbar.classList.add("hidden");
+        });
+      }
+    </script>
+  </body>
+</html>
