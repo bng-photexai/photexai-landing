@@ -1,16 +1,14 @@
-// Hero background gradient script
-
 document.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
   const colors = [
-    ["#ff7e5f", "#feb47b"], // Coral to Peach
-    ["#6a11cb", "#2575fc"], // Purple to Blue
-    ["#43cea2", "#185a9d"], // Teal to Navy
-    ["#ffafbd", "#ffc3a0"], // Pink to Light Orange
-    ["#1f4037", "#99f2c8"], // Dark Green to Mint
+    ["#ff7e5f", "#feb47b"],
+    ["#6a11cb", "#2575fc"],
+    ["#43cea2", "#185a9d"],
+    ["#ffafbd", "#ffc3a0"],
+    ["#1f4037", "#99f2c8"],
   ];
   let step = 0;
-  const colorSpeed = 0.02; // Speed of transition between colors
+  const colorSpeed = 0.02;
   let colorIndices = [0, 1];
 
   function interpolateColor(color1, color2, factor) {
