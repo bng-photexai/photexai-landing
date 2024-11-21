@@ -122,9 +122,9 @@
       <nav
         class="fixed z-20 flex-row items-center justify-center hidden w-full h-16 navbar lg:flex"
       >
-        <div class="flex flex-row justify-between w-full mx-4 2xl:w-4/6">
+        <div class="flex flex-row justify-between w-full lg:w-10/12 2xl:w-4/6">
           <!-- Wordmark Logo -->
-          <div>
+          <div class="sm:mx-2 2xl:-mx-3">
             <a href="https://photexai.com/">
               <img
                 src="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/3ac088c0-9f84-4573-8bbc-8479824ce400/public"
@@ -153,17 +153,19 @@
             >
           </ul>
           <!-- Coming Soon Badge -->
-          <div
-            class="flex items-center justify-center px-3 py-2 text-sm font-medium tracking-tight text-black bg-white rounded-md hover:bg-gray-300"
-          >
-            Coming Soon
+          <div class="flex items-center">
+            <span
+              class="inline-flex items-center gap-x-1.5 rounded-full px-2.5 py-1.5 text-xs font-medium text-white ring-1 ring-inset ring-gray-200"
+            >
+              Coming Soon
+            </span>
           </div>
         </div>
       </nav>
       <!-- Hero Section -->
       <section class="flex flex-col items-center justify-center w-full h-full">
         <div
-          class="flex items-center justify-center h-full px-5 isolate pt-14 lg:px-8 lg:w-4/6"
+          class="flex items-center justify-center h-full px-5 isolate pt-14 lg:px-8 lg:w-10/12 2xl:w-4/6"
         >
           <div class="max-w-5xl mx-auto">
             <div class="text-left sm:text-center">
@@ -190,11 +192,13 @@
           </div>
         </div>
       </section>
-      <!-- Desktop Footer -->
-      <footer class="w-full p-5 bg-black sm:p-10">
-        <div class="mx-auto max-w-screen-3xl sm:w-full 2xl:w-4/6">
-          <div class="-mx-1 sm:-mx-4 2xl:-mx-0 md:flex md:justify-between">
-            <div class="mb-6 md:mb-0">
+      <!-- Footer -->
+      <footer
+        class="flex items-center w-full p-5 bg-black sm:justify-center sm:py-10"
+      >
+        <div class="w-full sm:w-full lg:w-10/12 2xl:w-4/6">
+          <div class="md:flex md:justify-between">
+            <div class="mb-6 -mx-1 md:mb-0">
               <!-- Wordmark Logo -->
               <a href="https://photexai.com" class="flex items-center">
                 <img
@@ -331,7 +335,7 @@
               </div>
             </div>
           </div>
-          <hr class="my-6 sm:mx-autoborder-zinc-700 lg:my-8" />
+          <hr class="mx-0 my-6 sm:mx-auto border-zinc-700 lg:my-8" />
           <div class="sm:flex sm:items-center sm:justify-between">
             <span class="text-sm text-white sm:text-center"
               >© 2024
