@@ -1,0 +1,492 @@
+<!doctype html>
+<html class="font-inter">
+  <head>
+    <!-- Title -->
+    <title>PhotexAI | Blog</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <link rel="stylesheet" href="output.css" />
+    <!-- Dark Mode Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      media="(prefers-color-scheme: dark)"
+      href="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/5c6850ee-40ab-478f-32a4-20edd3362300/public"
+    />
+    <!-- Light Mode Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      media="(prefers-color-scheme: light)"
+      href="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/e39e8e1f-8a6a-40a6-fd37-25d12731f600/public"
+    />
+  </head>
+
+  <body class="w-full h-screen bg-black">
+    <div class="w-full h-full">
+      <!-- Mobile Navigation Bar -->
+      <nav
+        class="fixed z-10 flex flex-row items-center justify-between w-full h-16 p-4 bg-black navbar lg:hidden"
+      >
+        <!-- Wordmark Logo -->
+        <div>
+          <a href="https://photexai.com/">
+            <img
+              src="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/3ac088c0-9f84-4573-8bbc-8479824ce400/public"
+              alt="Logo"
+              class="h-10"
+            />
+          </a>
+        </div>
+        <!-- Open Mobile Navigation Button -->
+        <button class="open-mobile-navbar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="text-white size-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </nav>
+      <!-- Mobile Navigation Bar (Opened)-->
+      <nav
+        class="fixed z-20 flex-col items-start hidden w-full h-full px-4 py-3 bg-black mobile-navbar lg:hidden"
+      >
+        <div class="flex flex-row justify-between w-full">
+          <!-- Wordmark Logo -->
+          <div>
+            <a href="https://photexai.com/">
+              <img
+                src="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/3ac088c0-9f84-4573-8bbc-8479824ce400/public"
+                alt="Logo"
+                class="h-10"
+              />
+            </a>
+          </div>
+          <!-- Exit Mobile Navigation Button -->
+          <button class="close-mobile-navbar-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="text-white size-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Navigation Links -->
+        <ul class="flex flex-col items-start justify-center my-12 gap-y-8">
+          <!-- Articore -->
+          <a href="https://photexai.com/articore"
+            ><li class="text-3xl font-medium text-white">Articore</li></a
+          >
+          <!-- About -->
+          <a href="https://photexai.com/about"
+            ><li class="text-3xl font-medium text-white">About</li></a
+          >
+          <!-- Blog -->
+          <a href="https://photexai.com/blog"
+            ><li class="text-3xl font-medium text-white">Blog</li></a
+          >
+          <!-- Careers -->
+          <a href="https://photexai.com/careers"
+            ><li class="text-3xl font-medium text-white">Careers</li></a
+          >
+        </ul>
+      </nav>
+      <!-- Desktop Navigation Bar -->
+      <nav
+        class="fixed z-20 flex-row items-center justify-center hidden w-full h-16 bg-black navbar lg:flex"
+      >
+        <div class="flex flex-row justify-between w-full lg:w-10/12 2xl:w-4/6">
+          <!-- Wordmark Logo -->
+          <div class="sm:mx-2 2xl:-mx-3">
+            <a href="https://photexai.com/">
+              <img
+                src="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/3ac088c0-9f84-4573-8bbc-8479824ce400/public"
+                alt="Logo"
+                class="h-10"
+              />
+            </a>
+          </div>
+          <!-- Navigation Links -->
+          <ul class="flex flex-row items-center justify-center gap-x-8">
+            <!-- Articore -->
+            <a href="https://photexai.com/articore"
+              ><li class="text-sm font-semibold text-white">Articore</li></a
+            >
+            <!-- About -->
+            <a href="https://photexai.com/about"
+              ><li class="text-sm font-semibold text-white">About</li></a
+            >
+            <!-- Blog -->
+            <a href="https://photexai.com/blog"
+              ><li class="text-sm font-semibold text-white">Blog</li></a
+            >
+            <!-- Careers -->
+            <a href="https://photexai.com/careers"
+              ><li class="text-sm font-semibold text-white">Careers</li></a
+            >
+          </ul>
+          <!-- Coming Soon Badge -->
+          <div class="flex items-center">
+            <span
+              class="inline-flex items-center gap-x-1.5 rounded-full px-2.5 py-1.5 text-xs font-medium text-white ring-1 ring-inset ring-gray-200"
+            >
+              Coming Soon
+            </span>
+          </div>
+        </div>
+      </nav>
+      <!-- Blog Header Section -->
+      <section class="flex flex-col items-center justify-center w-full h-full">
+        <div
+          class="flex items-center justify-center h-full px-5 isolate pt-14 lg:px-8 lg:w-10/12 2xl:w-4/6"
+        >
+          <div class="max-w-5xl mx-auto">
+            <div class="text-left sm:text-center">
+              <h1
+                class="text-6xl font-semibold tracking-tight text-white 2xl:text-7xl"
+              >
+                Explore, Innovate, Inspire
+              </h1>
+              <p class="mt-12 text-lg font-normal text-white sm:text-xl">
+                Dive into the latest insights, stories, and trends shaping the
+                future of gaming and AI. Discover how creators are transforming
+                ideas into groundbreaking experiences.
+              </p>
+              <div
+                class="flex items-center justify-start mt-10 sm:justify-center gap-x-6"
+              >
+                <!-- Coming Soon Badge -->
+                <div
+                  class="flex items-center justify-center px-5 py-3 text-sm font-medium tracking-tight text-black bg-white rounded-full hover:bg-gray-300"
+                >
+                  Coming Soon
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer
+        class="flex items-center w-full p-5 bg-black sm:justify-center sm:py-10"
+      >
+        <div class="w-full sm:w-full lg:w-10/12 2xl:w-4/6">
+          <div class="md:flex md:justify-between">
+            <div class="mb-6 -mx-1 md:mb-0">
+              <!-- Wordmark Logo -->
+              <a href="https://photexai.com" class="flex items-center">
+                <img
+                  src="https://imagedelivery.net/Gz4H_61l4JaTt9jXN0QOhw/3ac088c0-9f84-4573-8bbc-8479824ce400/public"
+                  alt="Logo"
+                  class="h-10"
+                />
+              </a>
+            </div>
+            <div
+              class="grid grid-cols-1 gap-8 sm:gap-16 md:grid-cols-4 lg:grid-cols-4"
+            >
+              <!-- Research Section -->
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-white">Research</h2>
+                <ul class="text-sm text-gray-300">
+                  <!-- Articore -->
+                  <li>
+                    <a
+                      href="https://photexai.com/articore"
+                      class="font-medium hover:underline"
+                      >Articore</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Company Section -->
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-white">Company</h2>
+                <ul class="text-sm text-gray-300">
+                  <!-- About -->
+                  <li class="mb-4">
+                    <a
+                      href="https://photexai.com/about"
+                      class="font-medium hover:underline"
+                      >About</a
+                    >
+                  </li>
+                  <!-- Blog -->
+                  <li class="mb-4">
+                    <a
+                      href="https://photexai.com/blog"
+                      class="font-medium hover:underline"
+                      >Blog</a
+                    >
+                  </li>
+                  <!-- Careers -->
+                  <li>
+                    <a
+                      href="https://photexai.com/careers"
+                      class="font-medium hover:underline"
+                      >Careers</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Follow Section -->
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-white">Follow</h2>
+                <ul class="text-sm text-gray-300">
+                  <!-- Discord -->
+                  <li class="mb-4">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://discord.gg/zYWRy5t2fu"
+                      class="font-medium hover:underline"
+                      >Discord</a
+                    >
+                  </li>
+                  <!-- Instagram -->
+                  <li class="mb-4">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.instagram.com/photexai/"
+                      class="font-medium hover:underline"
+                      >Instagram</a
+                    >
+                  </li>
+                  <!-- Reddit -->
+                  <li class="mb-4">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.reddit.com/r/photexai/"
+                      class="font-medium hover:underline"
+                      >Reddit</a
+                    >
+                  </li>
+                  <!-- TikTok -->
+                  <li class="mb-4">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.tiktok.com/@photexai"
+                      class="font-medium hover:underline"
+                      >TikTok</a
+                    >
+                  </li>
+                  <!-- X (Twitter) -->
+                  <li class="mb-4">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://x.com/photexai"
+                      class="font-medium hover:underline"
+                      >X (Twitter)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Legal Section -->
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-white">Legal</h2>
+                <ul class="text-sm text-gray-300">
+                  <!-- Privacy -->
+                  <li class="mb-4">
+                    <a
+                      href="https://photexai.com/privacy"
+                      class="font-medium hover:underline"
+                      >Privacy</a
+                    >
+                  </li>
+                  <!-- Usage -->
+                  <li>
+                    <a
+                      href="https://photexai.com/usage"
+                      class="font-medium hover:underline"
+                      >Usage</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr class="mx-0 my-6 sm:mx-auto border-zinc-700 lg:my-8" />
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-white sm:text-center"
+              >© 2024
+              <a href="https://photexai.com/" class="hover:underline"
+                >PhotexAI</a
+              >
+            </span>
+            <!-- Social Media Icon Links -->
+            <div
+              class="flex mt-4 space-x-6 sm:items-center sm:justify-center sm:mt-0"
+            >
+              <!-- Discord -->
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://discord.gg/zYWRy5t2fu"
+                class="text-white"
+              >
+                <svg
+                  class="text-white size-6"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18.942 5.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.586 11.586 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3 17.392 17.392 0 0 0-2.868 11.662 15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.638 10.638 0 0 1-1.706-.83c.143-.106.283-.217.418-.331a11.664 11.664 0 0 0 10.118 0c.137.114.277.225.418.331-.544.328-1.116.606-1.71.832a12.58 12.58 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM8.678 14.813a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.929 1.929 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                  />
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/photexai/"
+                class="text-white"
+              >
+                <svg
+                  class="size-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+              <!-- Reddit -->
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.reddit.com/r/photexai/"
+                class="text-white"
+              >
+                <svg
+                  class="text-white size-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12.008 16.521a3.84 3.84 0 0 0 2.47-.77v.04a.281.281 0 0 0 .005-.396.281.281 0 0 0-.395-.005 3.291 3.291 0 0 1-2.09.61 3.266 3.266 0 0 1-2.081-.63.27.27 0 0 0-.38.381 3.84 3.84 0 0 0 2.47.77Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-4.845-1.407A1.463 1.463 0 0 1 18.67 12a1.46 1.46 0 0 1-.808 1.33c.01.146.01.293 0 .44 0 2.242-2.61 4.061-5.829 4.061s-5.83-1.821-5.83-4.061a3.25 3.25 0 0 1 0-.44 1.458 1.458 0 0 1-.457-2.327 1.458 1.458 0 0 1 2.063-.064 7.163 7.163 0 0 1 3.9-1.23l.738-3.47v-.006a.31.31 0 0 1 .37-.236l2.452.49a1 1 0 1 1-.132.611l-2.14-.45-.649 3.12a7.11 7.11 0 0 1 3.85 1.23c.259-.246.6-.393.957-.405Z"
+                    clip-rule="evenodd"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M15.305 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-4.625 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"
+                  />
+                </svg>
+              </a>
+              <!-- TikTok -->
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.tiktok.com/@photexai"
+                class="text-white"
+              >
+                <svg
+                  fill="#ffffff"
+                  class="text-white size-4"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>tiktok</title>
+                  <path
+                    d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- X (Twitter) -->
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://x.com/photexai"
+                class="text-white"
+              >
+                <svg
+                  class="text-white size-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JS Scripts -->
+    <script>
+      // navbar_open.js
+      const openMobileNavbarButton = document.querySelector(
+        ".open-mobile-navbar-button"
+      );
+      const closeMobileNavbarButton = document.querySelector(
+        ".close-mobile-navbar-button"
+      );
+      const mobileNavbar = document.querySelector(".mobile-navbar");
+
+      if (openMobileNavbarButton && closeMobileNavbarButton && mobileNavbar) {
+        openMobileNavbarButton.addEventListener("click", () => {
+          mobileNavbar.classList.remove("hidden");
+        });
+
+        closeMobileNavbarButton.addEventListener("click", () => {
+          mobileNavbar.classList.add("hidden");
+        });
+      }
+    </script>
+  </body>
+</html>
